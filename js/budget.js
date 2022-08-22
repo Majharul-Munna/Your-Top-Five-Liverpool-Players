@@ -25,7 +25,9 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const playersExpensesStr = playersExpenses.innerText;
     const playersExpensesValue = parseFloat(playersExpensesStr);
 
-    const totalCost = playersExpensesValue + managerCostValue + coachCostValue;
-    console.log(totalCost);
+    const newTotalCost = playersExpensesValue + managerCostValue + coachCostValue;
+
+    const totalCost = document.getElementById('final-total');
+    totalCost.innerText = newTotalCost;
 
 })

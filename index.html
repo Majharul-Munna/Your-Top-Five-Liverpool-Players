@@ -10,7 +10,7 @@
   <body class="full-body">
     <header class=" container p-3 mb-2 bg-dark text-white ">
         <div class="d-grid align-items-center justify-content-center header-part">
-            <h1 class="">Fave Five Players</h1>
+            <h1 class="text-primary fw-bold font-monospace">Fave Five Players</h1>
         </div>
     </header>
     <main>
@@ -23,7 +23,7 @@
                             <img src="images/mohammad-sala.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3 id="sala-name">Mohammad Salah</h3>
-                              <button class="btn btn-primary" id="sala-btn" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" id="sala-btn" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -32,7 +32,7 @@
                             <img src="images/frimino.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Frimino</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -41,7 +41,7 @@
                             <img src="images/Jota.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Diago Jota</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -50,7 +50,7 @@
                             <img src="images/henderson.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Henderson</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -59,7 +59,7 @@
                             <img src="images/fabinho.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Fabinho</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -68,7 +68,7 @@
                             <img src="images/Thiago.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Thiago</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -77,7 +77,7 @@
                             <img src="images/robertson.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Robertson</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -86,7 +86,7 @@
                             <img src="images/virgil-van-dijk.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Virgil Van-Dijk</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -95,7 +95,7 @@
                             <img src="images/alexander arnold.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Alexander Arnold</h3>
-                              <button class="btn btn-primary" onclick="addToSelect(this)">SELECT</button>
+                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="col-4">
                     <div class="text-white d-grid justify-content-center ms-5 selected">
-                        <h1 class="pt-5">Selected V</h1>
+                        <h1 class="pt-5">Selected - <span id="selected-number">V</span></h1>
                         <div class="mt-3 pb-5">
                             <table>
                               <tbody id="list-name">
@@ -133,7 +133,7 @@
                           <input id="coach" type="text" class="">
                         </div>
                         <button type="button" id="calculate-total-btn" class="btn btn-primary btn-lg mt-3">Calculate Total</button>
-                        <p class="pb-5">Total $<span id="" class="text-warning">15000</span></p>
+                        <p class="pb-5">Total $<span id="final-total" class="text-warning">15000</span></p>
                     </div>
                 </div>
             </div>

@@ -5,18 +5,21 @@ function display(playersName){
     const listName = document.getElementById('list-name')
     listName.innerHTML = '';
     const warningTexe = document.getElementById('warning');
+    const selectNumber = document.getElementById('selected-number');
+    
 
     for (i = 0; i < selectArray.length; i++)
     {
         if(selectArray.length >= 6)
         {
-            alert(message= 'More than 5 not available' );
+            alert(message = 'More than 5 not available' );
             warningTexe.innerText = 'More than 5 not available';
             break;
         }
 
 
         const names = selectArray[i];
+        selectNumber.innerText = selectArray.length;
 
         const tr = document.createElement('tr');
 
