@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fave Five Players</title>
+    <title>Fave Five LIVERPOOL Players</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body class="full-body">
     <header class=" container p-3 mb-2 bg-dark text-white rounded-bottom">
         <div class="d-grid align-items-center justify-content-center header-part">
-            <h1 class="text-primary fw-bold font-monospace">Fave Five Players</h1>
+            <h1 class="text-white fw-bold font-monospace">Fave Five <span class="text-danger">LIVERPOOL</span> Players</h1>
         </div>
         <img class="img-fluid rounded image" src="images/liverpool.png" alt="">
     </header>
@@ -24,7 +24,7 @@
                             <img src="images/mohammad-sala.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3 id="sala-name">Mohammad Salah</h3>
-                              <button class="btn btn-primary all-button" id="sala-btn" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" id="sala-btn" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -33,7 +33,7 @@
                             <img src="images/frimino.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Frimino</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -42,7 +42,7 @@
                             <img src="images/Jota.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Diago Jota</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -51,7 +51,7 @@
                             <img src="images/henderson.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Henderson</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -60,7 +60,7 @@
                             <img src="images/fabinho.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Fabinho</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -69,7 +69,7 @@
                             <img src="images/Thiago.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Thiago</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -78,7 +78,7 @@
                             <img src="images/robertson.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Robertson</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -87,7 +87,7 @@
                             <img src="images/virgil-van-dijk.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Virgil Van-Dijk</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -96,7 +96,7 @@
                             <img src="images/alexander arnold.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h3>Alexander Arnold</h3>
-                              <button class="btn btn-primary all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
+                              <button class="btn btn-danger all-button" onclick="addToSelect(this); this.disabled = true;">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -123,7 +123,7 @@
                             <P class="">Per Player : </P>
                             <input id="per-player-cost" type="text" class="">
                         </div>
-                        <button type="button" id="calculate-btn" class="btn btn-primary btn-lg mt-3">Calculate</button>
+                        <button type="button" id="calculate-btn" class="btn btn-danger btn-lg mt-3">Calculate</button>
                         <p>Player Expenses  $<span id="player-expenses" class="text-warning">1000</span></p>
                         <div class="d-flex">
                           <P class="">Manager : </P>
@@ -133,7 +133,7 @@
                           <P class="">Coach : </P>
                           <input id="coach" type="text" class="">
                         </div>
-                        <button type="button" id="calculate-total-btn" class="btn btn-primary btn-lg mt-3">Calculate Total</button>
+                        <button type="button" id="calculate-total-btn" class="btn btn-danger btn-lg mt-3">Calculate Total</button>
                         <p class="pb-5">Total $<span id="final-total" class="text-warning">15000</span></p>
                     </div>
                 </div>
