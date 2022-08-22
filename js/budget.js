@@ -1,5 +1,4 @@
 
-
 document.getElementById('calculate-btn').addEventListener('click', function(){
     const perPlayerCostInput = document.getElementById('per-player-cost');
     const perPlayerCostInputString = perPlayerCostInput.value;
@@ -8,8 +7,25 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const aLength = selectArray.length;
 
     const playersCost = perPlayerCostValue * aLength;
-    console.log(playersCost);
 
     const playerExpenses = document.getElementById('player-expenses');
     playerExpenses.innerText = playersCost;
+})
+
+document.getElementById('calculate-total-btn').addEventListener('click', function(){
+    const managerCostInput = document.getElementById('manager');
+    const managerCostInputString = managerCostInput.value;
+    const managerCostValue = parseFloat(managerCostInputString);
+
+    const coachCostInput = document.getElementById('coach');
+    const coachCostInputString = coachCostInput.value;
+    const coachCostValue = parseFloat(coachCostInputString);
+
+    const playersExpenses = document.getElementById('player-expenses');
+    const playersExpensesStr = playersExpenses.innerText;
+    const playersExpensesValue = parseFloat(playersExpensesStr);
+
+    const totalCost = playersExpensesValue + managerCostValue + coachCostValue;
+    console.log(totalCost);
+
 })
