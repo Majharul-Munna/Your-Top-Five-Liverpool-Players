@@ -1,6 +1,10 @@
 .header-part{
     height: 200px;
 }
+.image{
+    height: 75px;
+    width: 75px;
+}
 .full-body{
     background-color: rgb(140, 141, 141);
 }
