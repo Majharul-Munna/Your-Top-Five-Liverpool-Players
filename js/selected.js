@@ -1,5 +1,6 @@
 const selectArray = [];
 
+
 function display(playersName){
     const listName = document.getElementById('list-name')
     listName.innerHTML = '';
@@ -7,11 +8,13 @@ function display(playersName){
 
     for (i = 0; i < selectArray.length; i++)
     {
-        if(selectArray.length == 6)
+        if(selectArray.length >= 6)
         {
+            alert(message= 'More than 5 not available' );
             warningTexe.innerText = 'More than 5 not available';
             break;
         }
+
 
         const names = selectArray[i];
 
@@ -28,20 +31,14 @@ function display(playersName){
 }
 
 function addToSelect(element){
-    
+
     const playerName = element.parentNode.children[0].innerText;
     selectArray.push(playerName);
     display(selectArray);
+
 }
 
 
 
+// Budget calculation
 
-// document.getElementById('sala-btn').addEventListener('click', function(){
-//     const playerNameHtml = document.getElementById('sala-name');
-//     const playerNameText = playerNameHtml.innerText;
-
-//     const listedName =document.getElementById('list-name');
-//     listedName.innerText = playerNameText;
-//     // console.log(playerNameText);
-// })
